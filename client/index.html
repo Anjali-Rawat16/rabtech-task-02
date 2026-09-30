@@ -14,12 +14,152 @@
   </header>
 
   <main>
-    <section aria-labelledby="audit-heading">
+    <section aria-labelledby="audit-heading"  id="audit">
       <h2 id="audit-heading">SWTCH Energy Audit</h2>
       <p>Accessibility Score: 82/100</p>
       <p>Audit tool: Google PageSpeed Insights (Lighthouse)</p>
       <a href="../docs/accessibility-audit.md">View Audit Report</a>
     </section>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#audit">Audit Findings</a></li>
+        <li><a href="#dashboard">contact</a></li>
+      </ul>
+    </nav>
+
+    <aside aria-label="Dashboard sidebar">
+  <h2>Quick Links</h2>
+  <ul>
+    <li><a href="#audit">Audit Overview</a></li>
+    <li><a href="#findings">Findings</a></li>
+    <li><a href="#findings">Reports</a></li>
+  </ul>
+</aside>
+
+<section aria-labelledby="findings-heading" id="findings">
+  <h2 id="findings-heading">Accessibility Findings</h2>
+    <article>
+          <h3 id="table-heading">Audit Issue Details</h3>
+
+  <table>
+    <caption>Accessibility issues identified during the audit</caption>
+
+    <thead>
+      <tr>
+        <th scope="col">Issue</th>
+        <th scope="col">Priority</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Buttons lack accessible names</td>
+        <td>High</td>
+        <td>Open</td>
+      </tr>
+
+      <tr>
+        <td>Links lack discernible names</td>
+        <td>High</td>
+        <td>Open</td>
+      </tr>
+
+      <tr>
+        <td>Redundant image alternative text</td>
+        <td>Low</td>
+        <td>Open</td>
+      </tr>
+
+      <tr>
+        <td>Prohibited ARIA attributes</td>
+        <td>Medium</td>
+        <td>Open</td>
+      </tr>
+
+      <tr>
+        <td>Heading order is not sequential</td>
+        <td>Medium</td>
+        <td>Open</td>
+      </tr>
+    </tbody>
+  </table>
+  </article>
+</section>
+
+
+<section aria-labelledby="contact-heading" id="contact">
+  <h2 id="contact-heading">Contact Us</h2>
+ 
+
+  <form>
+  <fieldset>
+    <legend>Contact Information</legend>
+
+    <div>
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        autocomplete="name"
+        required
+      >
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="email"
+        required
+      >
+    </div>
+
+    <div>
+      <label for="message">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        required
+      ></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+    </fieldset>
+  </form>
+</section>
+
+<section aria-labelledby="help-heading">
+  <h2 id="help-heading">Need Help?</h2>
+
+  <button type="button" id="open-help">
+    Open Help
+  </button>
+
+  <dialog id="help-dialog" aria-labelledby="dialog-title">
+    <h2 id="dialog-title">Accessibility Help</h2>
+
+    <p>
+      Use the navigation links to review the audit findings
+      and accessibility recommendations.
+    </p>
+
+    <button type="button" id="close-help">
+      Close
+    </button>
+  </dialog>
+</section>
+
   </main>
+
+  <footer>
+  <p>&copy; 2026 RabTech Academy — Accessibility Audit Dashboard</p>
+</footer>
 </body>
 </html>
