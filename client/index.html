@@ -1,165 +1,345 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Accessibility Audit Dashboard</title>
-  <meta name="description" content="Accessibility audit findings and remediation dashboard.">
+
+  <meta
+    name="description"
+    content="Accessibility audit findings and product explorer dashboard."
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <!-- Header -->
   <header>
     <h1>Accessibility Audit Dashboard</h1>
-    <p>RabTech Academy — Task 02</p>
+    <p>RabTech Academy — Task 05</p>
   </header>
 
+
+  <!-- Main Content -->
   <main>
-    <section aria-labelledby="audit-heading"  id="audit">
+
+    <!-- Audit Section -->
+    <section aria-labelledby="audit-heading" id="audit">
       <h2 id="audit-heading">SWTCH Energy Audit</h2>
+
       <p>Accessibility Score: 82/100</p>
       <p>Audit tool: Google PageSpeed Insights (Lighthouse)</p>
-      <a href="../docs/accessibility-audit.md">View Audit Report</a>
+
+      <a href="../docs/accessibility-audit.md">
+        View Audit Report
+      </a>
     </section>
 
+
+    <!-- Navigation -->
     <nav aria-label="Main navigation">
       <ul>
-        <li><a href="#dashboard">Dashboard</a></li>
-        <li><a href="#audit">Audit Findings</a></li>
-        <li><a href="#dashboard">contact</a></li>
+        <li>
+          <a href="#dashboard">Dashboard</a>
+        </li>
+
+        <li>
+          <a href="#audit">Audit Findings</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+        <li>
+          <a href="#products">Products</a>
+        </li>
       </ul>
     </nav>
 
+
+    <!-- Sidebar -->
     <aside aria-label="Dashboard sidebar">
-  <h2>Quick Links</h2>
-  <ul>
-    <li><a href="#audit">Audit Overview</a></li>
-    <li><a href="#findings">Findings</a></li>
-    <li><a href="#findings">Reports</a></li>
-  </ul>
-</aside>
+      <h2>Quick Links</h2>
 
-<section aria-labelledby="findings-heading" id="findings">
-  <h2 id="findings-heading">Accessibility Findings</h2>
-    <article>
-          <h3 id="table-heading">Audit Issue Details</h3>
+      <ul>
+        <li>
+          <a href="#audit">Audit Overview</a>
+        </li>
 
-  <table>
-    <caption>Accessibility issues identified during the audit</caption>
+        <li>
+          <a href="#findings">Findings</a>
+        </li>
 
-    <thead>
-      <tr>
-        <th scope="col">Issue</th>
-        <th scope="col">Priority</th>
-        <th scope="col">Status</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>Buttons lack accessible names</td>
-        <td>High</td>
-        <td>Open</td>
-      </tr>
-
-      <tr>
-        <td>Links lack discernible names</td>
-        <td>High</td>
-        <td>Open</td>
-      </tr>
-
-      <tr>
-        <td>Redundant image alternative text</td>
-        <td>Low</td>
-        <td>Open</td>
-      </tr>
-
-      <tr>
-        <td>Prohibited ARIA attributes</td>
-        <td>Medium</td>
-        <td>Open</td>
-      </tr>
-
-      <tr>
-        <td>Heading order is not sequential</td>
-        <td>Medium</td>
-        <td>Open</td>
-      </tr>
-    </tbody>
-  </table>
-  </article>
-</section>
+        <li>
+          <a href="#products">Products</a>
+        </li>
+      </ul>
+    </aside>
 
 
-<section aria-labelledby="contact-heading" id="contact">
-  <h2 id="contact-heading">Contact Us</h2>
- 
+    <!-- Accessibility Findings -->
+    <section aria-labelledby="findings-heading" id="findings">
 
-  <form>
-  <fieldset>
-    <legend>Contact Information</legend>
+      <h2 id="findings-heading">
+        Accessibility Findings
+      </h2>
 
-    <div>
-      <label for="name">Name</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        autocomplete="name"
-        required
+      <article>
+
+        <h3 id="table-heading">
+          Audit Issue Details
+        </h3>
+
+        <table>
+
+          <caption>
+            Accessibility issues identified during the audit
+          </caption>
+
+          <thead>
+            <tr>
+              <th scope="col">Issue</th>
+              <th scope="col">Priority</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Buttons lack accessible names</td>
+              <td>High</td>
+              <td>Open</td>
+            </tr>
+
+            <tr>
+              <td>Links lack discernible names</td>
+              <td>High</td>
+              <td>Open</td>
+            </tr>
+
+            <tr>
+              <td>Redundant image alternative text</td>
+              <td>Low</td>
+              <td>Open</td>
+            </tr>
+
+            <tr>
+              <td>Prohibited ARIA attributes</td>
+              <td>Medium</td>
+              <td>Open</td>
+            </tr>
+
+            <tr>
+              <td>Heading order is not sequential</td>
+              <td>Medium</td>
+              <td>Open</td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </article>
+
+    </section>
+
+
+    <!-- Contact Form -->
+    <section aria-labelledby="contact-heading" id="contact">
+
+      <h2 id="contact-heading">
+        Contact Us
+      </h2>
+
+      <form>
+
+        <fieldset>
+
+          <legend>Contact Information</legend>
+
+          <div>
+            <label for="name">Name</label>
+
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              required
+            >
+          </div>
+
+
+          <div>
+            <label for="email">Email</label>
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              required
+            >
+          </div>
+
+
+          <div>
+            <label for="message">Message</label>
+
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+
+          <button type="submit">
+            Send Message
+          </button>
+
+        </fieldset>
+
+      </form>
+
+    </section>
+
+
+    <!-- Help Section -->
+    <section aria-labelledby="help-heading">
+
+      <h2 id="help-heading">
+        Need Help?
+      </h2>
+
+      <button type="button" id="open-help">
+        Open Help
+      </button>
+
+
+      <dialog
+        id="help-dialog"
+        aria-labelledby="dialog-title"
       >
-    </div>
 
-    <div>
-      <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        autocomplete="email"
-        required
-      >
-    </div>
+        <h2 id="dialog-title">
+          Accessibility Help
+        </h2>
 
-    <div>
-      <label for="message">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        rows="5"
-        required
-      ></textarea>
-    </div>
+        <p>
+          Use the navigation links to review the audit findings
+          and accessibility recommendations.
+        </p>
 
-    <button type="submit">Send Message</button>
-    </fieldset>
-  </form>
-</section>
+        <button type="button" id="close-help">
+          Close
+        </button>
 
-<section aria-labelledby="help-heading">
-  <h2 id="help-heading">Need Help?</h2>
+      </dialog>
 
-  <button type="button" id="open-help">
-    Open Help
-  </button>
+    </section>
 
-  <dialog id="help-dialog" aria-labelledby="dialog-title">
-    <h2 id="dialog-title">Accessibility Help</h2>
 
-    <p>
-      Use the navigation links to review the audit findings
-      and accessibility recommendations.
-    </p>
+    <!-- Product Explorer -->
+    <section
+      aria-labelledby="products-heading"
+      id="products"
+    >
 
-    <button type="button" id="close-help">
-      Close
-    </button>
-  </dialog>
-</section>
+      <h2 id="products-heading">
+        Product Explorer
+      </h2>
+
+
+      <!-- Search -->
+      <div>
+        <label for="search">
+          Search products
+        </label>
+
+        <input
+          type="search"
+          id="search"
+          placeholder="Search products"
+        >
+      </div>
+
+
+      <!-- Category -->
+      <div>
+        <label for="category">
+          Category
+        </label>
+
+        <select id="category">
+
+          <option value="all">
+            All categories
+          </option>
+
+        </select>
+      </div>
+
+
+      <!-- Sorting -->
+      <div>
+        <label for="sort">
+          Sort by price
+        </label>
+
+        <select id="sort">
+
+          <option value="default">
+            Default
+          </option>
+
+          <option value="low">
+            Low to high
+          </option>
+
+          <option value="high">
+            High to low
+          </option>
+
+        </select>
+      </div>
+
+
+      <!-- Products will be inserted by JavaScript -->
+      <div id="product-list">
+
+        <p>
+          Loading products...
+        </p>
+
+      </div>
+
+    </section>
+
   </main>
 
+
+  <!-- Footer -->
   <footer>
-  <p>&copy; 2026 RabTech Academy — Accessibility Audit Dashboard</p>
-</footer>
+
+    <p>
+      &copy; 2026 RabTech Academy — Accessibility Audit Dashboard
+    </p>
+
+  </footer>
+
+
+  <!-- JavaScript -->
+  <script
+    type="module"
+    src="app.js"
+  ></script>
+
 </body>
 </html>
